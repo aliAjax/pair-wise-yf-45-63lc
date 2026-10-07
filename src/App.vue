@@ -21,7 +21,7 @@ const isOnline = computed({
         <div><b>现场制片台</b><small>Schedule Control</small></div>
       </div>
       <nav>
-        <RouterLink to="/" :class="{ active: route.name === 'schedule' }">◫ {{ t("schedule") }}</RouterLink>
+        <RouterLink to="/" :class="{ active: route.name === 'schedule' }">◫ {{ t("schedule") }}<em v-if="store.pendingCount || store.failedCount" class="badge-warn">{{ store.pendingCount + store.failedCount }}</em></RouterLink>
         <RouterLink to="/conflicts" :class="{ active: route.name === 'conflicts' }">△ {{ t("conflicts") }} <em>{{ store.conflicts.length }}</em></RouterLink>
         <RouterLink to="/history" :class="{ active: route.name === 'history' }">↺ {{ t("history") }}</RouterLink>
       </nav>

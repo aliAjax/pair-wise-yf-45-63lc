@@ -10,6 +10,7 @@ button,input,select,textarea { font:inherit; }
 nav { display:grid; gap:7px; }
 nav a { color:#b9c2d2; text-decoration:none; padding:12px 13px; border-radius:9px; display:flex; gap:8px; align-items:center; }
 nav a.active,nav a:hover { color:#fff; background:#273550; } nav em { margin-left:auto; font-style:normal; background:var(--accent); border-radius:99px; padding:1px 7px; }
+nav em.badge-warn { background:#e8b339; color:#17233c; font-weight:800; }
 .network-card { margin-top:auto; padding:15px; background:#202e49; border:1px solid #344361; border-radius:12px; display:grid; gap:10px; } .network-card label { font-size:12px; color:#9fa9bd; } .network-card small { line-height:1.5; color:#aeb8c9; }
 .main { min-width:0; padding:26px 30px 50px; }
 .topbar { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-bottom:22px; }
