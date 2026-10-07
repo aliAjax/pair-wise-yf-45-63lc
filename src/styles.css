@@ -29,6 +29,22 @@ label.field { display:grid; gap:7px; color:var(--muted); font-size:13px; } label
 .scene { display:grid; grid-template-columns:26px 120px minmax(180px,1fr) 100px auto; align-items:center; gap:10px; padding:13px; border:1px solid var(--line); border-radius:12px; background:#fbfcfe; cursor:grab; }
 .scene.dragging { opacity:.45; } .scene.locked { border-color:#8b94a6; background:#f3f4f6; cursor:not-allowed; }
 .scene-code { font-weight:900; color:var(--accent); } .scene-title b { display:block; } .scene-title small,.scene-meta small { color:var(--muted); }
+.scene .wide { grid-column:1/-1; }
+.scene-meta { display:grid; gap:9px; padding-top:9px; border-top:1px dashed var(--line); }
+.edit-row { display:flex; flex-wrap:wrap; gap:8px; align-items:flex-end; }
+.edit-row label { display:grid; gap:4px; font-size:12px; color:var(--muted); }
+.edit-row label.grow { flex:1; min-width:170px; }
+.edit-row input,.edit-row select { border:1px solid #cfd7e5; border-radius:8px; padding:6px 8px; background:#fafbfd; }
+.edit-row select[multiple] { min-height:62px; }
+.edit-row button { padding:8px 14px; }
+.confirm-line { margin:0 0 12px; font-size:13px; }
+.review-panel .history-row { grid-template-columns:150px 110px 1fr; align-items:center; }
+.pending-banner { background:#ffe4dc; border-color:#f2a18a; }
+.stale-banner { background:#fde8e8; border-color:#e0a0a0; }
+.version-row { margin-bottom:10px; }
+.exemption-row { align-items:start; }
+.exemption-row.已作废 b { color:#a05a5a; }
+.void-reason { color:#c84545; }
 .status { display:inline-block; padding:4px 8px; border-radius:99px; font-size:12px; background:#e8edf4; } .status.已确认 { background:#dff3e8;color:#19704b; } .status.拍摄中 { background:#fff0d4;color:#96600d; } .status.已完成 { background:#e8e5ff;color:#4c42a8; }
 .conflict { display:grid; grid-template-columns:auto 1fr auto; gap:14px; align-items:start; padding:15px; border:1px solid #f2c1b5; border-radius:12px; background:#fff8f5; margin-bottom:10px; } .conflict .seal { padding:7px 9px; border-radius:8px; background:#f25f3a;color:#fff;font-weight:800; }
 .history { display:grid; gap:8px; } .history-row { display:grid; grid-template-columns:150px 120px 1fr; gap:12px; padding:11px 0; border-bottom:1px solid var(--line); font-size:14px; } .muted { color:var(--muted); }
